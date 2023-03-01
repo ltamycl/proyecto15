@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="icon" href="./imagenes/ico/icono2.png">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Cristian</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+    </div>
+
+    <!--Seccion Inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./imagenes/perfil/perfil.png" alt="imagen de perfil">
+            </div>
+            <h1>Cristian Lara</h1>
+            <h2>Futuro Programador-full Stack</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100089710185696" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/cristianlara894" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://join.skype.com/invite/oyLzqQMFT3Ql" target="_blank"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://www.linkedin.com/in/cristian-lara-0a40a1242/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Sobre mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Cristian Lara</span>, un futuro programador JR,
+             inicié a estudiar en el 2022 por curiosidad, día a día sigo aprendiendo por mi cuenta,
+             también ingreso a  cursos online, que provee el Gobierno ya que me suman muchas horas de estudio
+             y comparto con nuevos compañeros de los cuales siempre se puede ayudar o aprender algo nuevo,
+             estoy muy concentrado en el estudio, tengo la meta de estar programando a fin de año y pertenecer
+             a alguna empresa, espero les agrade mi curriculum, muchas gracias, dejo mis datos a continuación. </p>
+            <div class="fila">
+                <!--Datos personales-->
+                <div class="col">
+                     <h3>Datos Personales</h3>   
+                     <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            15-02-1991
+                        </li>
+                        <li>
+                            <strong>E-mail</strong>
+                            cristianlara894@hotmail.com.ar
+                        </li>
+                        <li>
+                            <strong>Domicilio</strong>
+                             Tucumán - Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span> 
+                        </li>
+                     </ul>
+                </div>
+
+                <!--Intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>WINDOWS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"> </span>
+            </button>
+
+        </div>
+    </section>
+
+    <!--Seccion Skills-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>SKILLS</h2>
+            <div class="fila">
+                <!--Technical Skill-->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Laravel</span>
+                        <div class="barra-skill">
+                            <div class="progreso photoshop">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP MOV</span>
+                        <div class="barra-skill">
+                            <div class="progreso wordpress">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Bootstrap</span>
+                        <div class="barra-skill">
+                            <div class="progreso bootstrap">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Professionnal Skills-->
+                <div class="col">
+                    <h3>Profesionals Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso equipo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso proyect">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Educación</h4>
+                        <span class="casa">Colegio América</span>
+                        <span class="fecha">2007-2010</span>
+                        <p>Secundario Completo.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>      
+                    </div>
+                    <div class="item izq">
+                        <h4>Terciario</h4>
+                        <span class="casa">Escuela de Vialidad Nacional</span>
+                        <span class="fecha">2013-2015</span>
+                        <p>Terciario sin finalizar y cursado hasta segundo año.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>      
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia en cursos</h3>
+                    <div class="item der">
+                        <h4>BA Multiplica</h4>
+                        <span class="casa">Clases a distancia</span>
+                        <span class="fecha">Mayo 2022 - 56 horas</span>
+                        <p>Curso certificado por la dirección de Politicas de Juventud</p>
+                        <div class="conectoro">
+                            <div class="circuloi"></div>
+                        </div>      
+                    </div>
+                    <div class="item der">
+                        <h4>BA Multiplica 2.0</h4>
+                        <span class="casa">Clases a distancia</span>
+                        <span class="fecha">Diciembre 2022 - 56 horas</span>
+                        <p>Programación Web - Front End Developer, Gestión de
+                           proyectos e Inteligencia Emocional.</p>
+                        <div class="conectoro">
+                            <div class="circuloi"></div>
+                        </div>      
+                    </div>
+                    <div class="item der">
+                        <h4>Argentina Programa 4.0</h4>
+                        <span class="casa">Clases a distancia</span>
+                        <span class="fecha">2007-2010</span>
+                        <p>Programación Web - Front End Developer</p>
+                        <div class="conectoro">
+                            <div class="circuloi"></div>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Portfolio-->
+    <div class="portfolio" id="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://alumniproyecto.000webhostapp.com/" target="_blank">
+                        <img src="./imagenes/portfilio/wapasfolio.jpg" alt="">
+                    </a>
+                    <div class="overlay">
+                        <h3>Primer Proyecto</h3>
+                        <p>Academia IT</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://ltamycl.github.io/Proyecto-BS-AS/" target="_blank">
+                        <img src="./imagenes/portfilio/portfolio1.jpg" alt="">
+                    </a>
+                    <div class="overlay">
+                        <h3>Segundo Proyecto</h3>
+                        <p>BA Multioplica</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://ltamycla.000webhostapp.com/" target="_blank">
+                        <img src="./imagenes/portfilio/portfolio2.jpg" alt="">
+                    </a>
+                    
+                    <div class="overlay">
+                        <h3>Tercer Proyecto</h3>
+                        <p>Argentina Programa 4.0</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <!--Seccion Contacto-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>ESCRÍBEME</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Número Telefónico">
+                    <input type="text" placeholder="Dirección de Correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder=""></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="./imagenes/ubicacion/ubicacion.jpg" alt="">
+                    <nav id="nav">
+                       <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                Tucumán - Argentina
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Tucumán - Argentina
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                cristianlara894@hotmail.com.ar
+                            </li>
+                        </ul>
+                      </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./javascript.js"></script>
+
+    <!--Seccion Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100089710185696" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/cristianlara894" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://join.skype.com/invite/oyLzqQMFT3Ql" target="_blank"><i class="fa-brands fa-skype"></i></a>
+            <a href="https://www.linkedin.com/in/cristian-lara-0a40a1242/"><i class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+
+    </footer>
+</body>
+</html>
